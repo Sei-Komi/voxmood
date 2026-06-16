@@ -40,7 +40,7 @@ pip install aiohttp
 
 **2. 配置**
 
-去 [DashScope](https://dashscope.aliyuncs.com/) 申请 API key（有免费额度），然后：
+去 [阿里云百炼](https://bailian.console.aliyun.com/) 申请 API key（Qwen 模型，新用户有免费额度），然后：
 
 ```bash
 export VOXMOOD_API_KEY="sk-你的key"
@@ -112,7 +112,7 @@ python voxmood.py
 
 | 变量 | 默认值 | 说明 |
 |---|---|---|
-| `VOXMOOD_API_KEY` | *(必填)* | DashScope API key |
+| `VOXMOOD_API_KEY` | *(必填)* | 阿里云百炼 API key |
 | `VOXMOOD_PORT` | `9233` | 代理端口 |
 | `VOXMOOD_UPSTREAM_URL` | `https://dashscope-intl.aliyuncs.com/compatible-mode/v1` | 上游转写 API |
 | `VOXMOOD_MODEL` | `qwen-omni-turbo` | 分析用多模态模型 |
@@ -133,7 +133,7 @@ export VOXMOOD_MODEL="gpt-4o-audio-preview"
 
 - Python 3.8+
 - `aiohttp`（`pip install aiohttp`）
-- DashScope API key（或任何 OpenAI 兼容的多模态 API）
+- 阿里云百炼 API key（[申请地址](https://bailian.console.aliyun.com/)，新用户 100 万 token 免费）
 
 ---
 
@@ -167,7 +167,7 @@ pip install aiohttp
 
 **2. Configure**
 
-Get a [DashScope API key](https://dashscope.aliyuncs.com/) (free tier available) and set it:
+Get an [Alibaba Cloud Bailian API key](https://bailian.console.aliyun.com/) (Qwen models, free tier for new users) and set it:
 
 ```bash
 export VOXMOOD_API_KEY="sk-your-key-here"
@@ -239,7 +239,7 @@ All settings via environment variables:
 
 | Variable | Default | Description |
 |---|---|---|
-| `VOXMOOD_API_KEY` | *(required)* | DashScope API key |
+| `VOXMOOD_API_KEY` | *(required)* | Alibaba Cloud Bailian API key |
 | `VOXMOOD_PORT` | `9233` | Proxy listen port |
 | `VOXMOOD_UPSTREAM_URL` | `https://dashscope-intl.aliyuncs.com/compatible-mode/v1` | Upstream STT API base URL |
 | `VOXMOOD_MODEL` | `qwen-omni-turbo` | Multimodal model for analysis |
@@ -266,7 +266,7 @@ curl http://localhost:9233/health
 
 - Python 3.8+
 - `aiohttp` (`pip install aiohttp`)
-- A DashScope API key (or any OpenAI-compatible multimodal API)
+- An Alibaba Cloud Bailian API key ([sign up](https://bailian.console.aliyun.com/), free tier available)
 
 ---
 
